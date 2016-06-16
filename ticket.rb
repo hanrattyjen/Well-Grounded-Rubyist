@@ -30,7 +30,7 @@ request = gets.chomp
 
 if ticket.respond_to?(request)
 	puts ticket.send(request)
-else
+else 
 	puts 'No such information available.'
 end
 
