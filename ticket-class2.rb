@@ -1,9 +1,16 @@
 class Ticket
+
+	VENUES = ["Convention Center", "Fairgrounds", "Town Hall"]
+
 	attr_reader :venue, :date
 	attr_accessor :price
 
 	def initialize(venue, date)
-		@venue = venue
+		if VENUES.include?(venue)
+			@venue = venue
+		else
+			raise ArgumentError, "Unknown venue #{venue}"
+		end
 		@date = date
 	end
 end
@@ -23,5 +30,7 @@ fg.price = 18.00
 highest = Ticket.most_expensive(th,cc,fg)
 puts "The highest priced ticket is the one for #{highest.venue}."
 
-puts "Testing the response of a ticket instance..."
-wrong = fg.most_expensive
+puts "We've closed the class definition."
+puts "So we have to use the path notation to reach the constant."
+puts "The venues are:"
+puts Ticket::venues
