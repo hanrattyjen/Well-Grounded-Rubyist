@@ -2,7 +2,7 @@ class Car
 	@@makes = []
 	@@cars = {}
 	@@total_count = 0
-	attr_reader :makes
+	attr_reader :make
 	def self.total_count
 		@@total_count
 	end
@@ -35,7 +35,7 @@ f = Car.new("Ford")
 h2 = Car.new("Honda")
 
 puts "Counting cars of same make as h2:"
-# puts "There are #{h2.make_mates}."
+puts "There are #{h2.make_mates}."
 
 # x = Car.new("Brand X") 
 
