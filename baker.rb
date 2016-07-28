@@ -28,4 +28,4 @@ class Baker
 end
 
 b = Baker.new
-add_egg
+ add_egg
