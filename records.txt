@@ -1,0 +1,4 @@
+Pablo Casalas|Catalan|cello|1876-1973
+Jascha Heifitz|Russian-American|violin|1901-1988
+Emanuel Feururman|Austrian-American|cello|1902-1942
+
