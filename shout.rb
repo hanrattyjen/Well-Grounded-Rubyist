@@ -8,7 +8,6 @@ end
 
 class Person
 	attr_accessor :name
-
 	using Shout
 	def announce 
 		puts "Accouncing #{name.shout}"

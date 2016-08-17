@@ -2,7 +2,6 @@ class Person
 	attr_accessor :name
 end
 
-
 module Secretive
 	def name
 		"[not available]"

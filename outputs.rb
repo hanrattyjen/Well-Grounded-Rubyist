@@ -1,4 +1,4 @@
-record = File.open("record.rb", "w")
+record = File.open("record", "w")
 old_stdout = $stdout
 $stdout = record
 $stderr = $stdout
